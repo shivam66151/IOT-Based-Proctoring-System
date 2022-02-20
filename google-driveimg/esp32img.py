@@ -1,7 +1,7 @@
-
+# Required Libraries
 import cv2
-import numpy as np
-import urllib.request
+import numpy as np  # TO convert images into array
+import urllib.request # for Opening and reading url
 import time
 from pydrive.drive import GoogleDrive
 from pydrive.auth import GoogleAuth
@@ -15,8 +15,8 @@ google_auth = GoogleAuth()
 google_auth.LocalWebserviceAuth()
 drive = GoogleDrive(google_auth)
 
-# Drive folder Id
-folder = "1vvAzTtx4RQ_mv6Pn3uZh3kEcFgnfUDrX"    
+# Google Drive folder Id
+fold_id = "1vvAzTtx4RQ_mv6Pn3uZh3kEcFgnfUDrX"    
 
 while True:
     img_response = urllib.request.urlopen(cam_url)   # Opening and reading url
