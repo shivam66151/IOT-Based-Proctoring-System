@@ -27,4 +27,7 @@ while True:
 
     key = cv2.waitKey(5)
 
-    if key == 
+    if key ==('k'):
+        count += 1
+        t = str(count) + '.png'
+        cv2.imwrite(t,frame)
