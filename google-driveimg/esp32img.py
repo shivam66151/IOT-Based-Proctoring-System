@@ -31,3 +31,15 @@ while True:
         count += 1
         t = str(count) + '.png'
         cv2.imwrite(t,frame)
+        print("Image saved as: "+t)
+        f = drive.CreateFile({"parents" : [{'id' : fold_id}] , "title" : t})
+        f.SetContentFile('1.png')
+        f.Upload()
+        print("Image successfully uploaded as: "+t)
+        
+        if key ==ord('q'):
+         break
+    else:
+        continue
+
+    cv2.destroyAllWindows()
