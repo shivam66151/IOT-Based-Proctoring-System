@@ -6,7 +6,7 @@ import time
 from pydrive.drive import GoogleDrive
 from pydrive.auth import GoogleAuth
 
-cam_url = 'https://'
+cam_url = 'http://192.168.1.104'
 cv2.namedWindow("Live Streaming", cv2.WINDOW_AUTOSIZE)
 
 count = 0
