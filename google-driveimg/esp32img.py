@@ -12,7 +12,7 @@ cv2.namedWindow("Live Streaming", cv2.WINDOW_AUTOSIZE)
 count = 0
 
 google_auth = GoogleAuth()
-google_auth.LocalWebserviceAuth()
+google_auth.LocalWebserverAuth()
 drive = GoogleDrive(google_auth)
 
 # Google Drive folder Id
